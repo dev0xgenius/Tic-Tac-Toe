@@ -10,9 +10,10 @@ Game Rules:
 - X always goes first.
 - First player to get his/her symbol to match diagonally or horizontally, wins.
 
+*ALL DONE*
 Components(parts):
 - User Interface (DONE)
-- Get Inputs (DOING)
+- Get Inputs (DONE)
 - Validate Inputs
 - Match Checker * Checks if a player has matched his/her symbol *
 
