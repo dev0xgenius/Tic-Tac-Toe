@@ -65,8 +65,9 @@ section {
 }
 
 [class *="item"]:active {
-  background-color: orange;
-  color: whitesmoke;
+  background-color: transparent;
+  color: #EAEAEA;
+  border: 1.5px solid #EAEAEA;
 }
 
 /* Stops the box from resizing */
