@@ -34,7 +34,7 @@ section {
 
 #gameBox {
   display: grid;
-  grid-template-columns: repeat(3, 80px);
+  grid-template-columns: repeat(3, 100px);
   gap: .5rem;
   min-height: 30vh;
   width: max-content;
@@ -50,16 +50,13 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 80px;
-  min-height: 80px;
   margin: 0;
   text-align: center;
   font-size: 3em;
   font-weight: bold;
   font-family: monospace;
-  border-radius: 12px;
+  border-radius: 15px;
   color: #EAEAEA;
-  box-shadow: 3px 3px #247BA0;
   background-color: #3E78B2;
   transition: 0.1s ease-in-out;
 }
@@ -67,7 +64,7 @@ section {
 [class *="item"]:active {
   background-color: transparent;
   color: #EAEAEA;
-  border: 1.5px solid #EAEAEA;
+  border: 2px solid #EAEAEA;
 }
 
 /* Stops the box from resizing */
