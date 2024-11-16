@@ -37,7 +37,8 @@ section {
   grid-template-columns: repeat(3, 100px);
   gap: 1rem;
   min-height: 30vh;
-  width: max-content;
+  width: 100%;
+  max-width: 448px;
   height: auto;
   margin: 0 auto;
   padding: 20px;
