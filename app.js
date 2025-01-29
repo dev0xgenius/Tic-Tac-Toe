@@ -26,10 +26,11 @@ function main() {
     event.target.querySelector(".text").
       innerHTML = TicTacToe.turn;
 
-    if (symbolMatch(TicTacToe["grid"], TicTacToe["turn"])) {
+    if (symbolMatch(TicTacToe.grid, TicTacToe.turn)) {
       //Stop players from clicking when match is found...
       for (let cell of TicTacToe.cells)
         cell.removeEventListener("click", handleCellClick);
+        
       gameOver(TicTacToe);
       return;
     }
@@ -42,12 +43,14 @@ function createGrid(width, array) {
   let grid = [];
 
   for (let row = 0; row < width; row++) {
-    for (let j = 0; j < width; j++) {
+    for (let col = 0; col < width; col++) {
       if (typeof grid[row] != 'object') grid[row] = [];
-      grid[row].push(array[j]);
-
-    } array = array.slice(3, array.length);
+      grid[row].push(array[col]);
+    } 
+    
+    array = array.slice(3, array.length);
   }
+  
   return grid;
 }
 
